@@ -1,0 +1,14 @@
+{
+  "name": "NetHackerDB",
+  "version": "1.0.1",
+  "description": "NetHackerDB - All rights reserved.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "All rights reserved",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
