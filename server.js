@@ -19,4 +19,7 @@ app.post('/set', (req, res) => {
 app.post('/data', (req, res) => {
   const variable = req.body.var;
   var db = JSON.parse(fs.readFileSync('db.json', 'utf8'));
-  res.send(
+  res.send(db[variable].data;
+});
+
+app.listen(process.env.PORT, () => {console.log('server running at https://localhost.'});
