@@ -22,4 +22,4 @@ app.post('/data', (req, res) => {
   res.send(db[variable].data);
 });
 
-app.listen(process.env.PORT, () => {console.log('server running at https://localhost.'});
+app.listen(process.env.PORT, () => {console.log('server running at https://localhost.')});
