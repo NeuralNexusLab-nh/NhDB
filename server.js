@@ -2,8 +2,9 @@ const express = require("express");
 const fs = require("fs");
 const app = express();
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*'); // 或指定來源
-  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  res.setHeader('Access-Control-Allow-Origin', '*'); // 或指定來源
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type'); 
   next();
 });
 
